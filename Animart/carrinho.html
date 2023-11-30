@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Jost:wght@200&family=Lato:wght@100&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <title>Formulário de checkout</title>
+    
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Jost:wght@200&family=Lato:wght@100&family=Libre+Baskerville:wght@700&display=swap');
+
+        
+        @media screen and (max-width: 768px) {
+                .body, .h1, .h2, .form, .fieldset, .h1 span {
+                    width: 100%;
+                    flex-direction: column;
+                    
+    }
+
+  }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#f1eded, #a2d9f3);
+        }
+
+        form {
+
+            margin-bottom: 10%;
+        }
+
+        fieldset {
+            margin: auto;
+            margin: 5% 30% 50% 30%;
+            border: solid 4px black;
+            border-radius: 20px;
+            background: linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
+
+        }
+
+        fieldset > div {
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 120%;
+            color: black;
+            text-align: left;
+        }
+
+        label span {
+            color: red;
+        }
+
+        input, select {
+            border: 2px solid grey;
+            border-radius: 4px;
+            padding: 10px;
+            width: 200px;
+        }
+
+        select {
+            box-shadow: none;
+            color: #666;
+            width: 100%;
+        }
+
+        .select-wrapper {
+            position: relative;
+            width: 222px;
+        }
+
+        .select-wrapper::after {
+            content: '< >';
+            color: #666;
+            font-size: 18px;
+            top: 8px;
+            right: 0;
+            transform: rotate(90deg);
+            position: absolute;
+            z-index: -1;
+        }
+
+        .input-simples input {
+            width: 439px;
+        }
+
+        .input-duplo {
+            display: flex;
+        }
+
+        .input-duplo > div {
+            margin-right: 15px;
+        }
+
+        input:valid {
+            border: 2px solid green;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        .radio input {
+            float: left;
+            margin-right: 10px;
+            width: auto;
+        }
+
+        button {
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 224px;
+            padding: 10px;
+            text-transform: uppercase;
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            padding: 10px;
+
+        }
+
+        h1 span {
+            margin: auto;
+            background: linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
+            padding: 14px;
+            border: 4px solid black;
+            text-transform: uppercase;
+            border-radius: 15px;
+            box-shadow: rgb(32, 22, 59) 0px 5px 0 0;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            padding: 4px;
+            color: black;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1> <span>Finalizar compra </span></h1>
+    <form action="url_para_enviar_dados_do_formulario" method="post">
+        <fieldset></span>
+            <h2>Endereço para entrega</h2>
+            <div class="input-duplo">
+                <div>
+                    <label for="nome">Nome: <span>*</span></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome: <span>*</span></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </div>
+            <div class="input-simples">
+                <div>
+                    <label for="endereco">Endereço: <span>*</span></label>
+                    <input type="text" name="endereco" id="endereco" required>
+                </div>
+            </div>
+            <div class="input-duplo">
+                <div>
+                    <label for="cep">CEP: <span>*</span></label>
+                    <input type="text" name="cep" id="cep" required>
+                </div>
+                <div>
+                    <label for="pais">País</label>
+                    <div class="select-wrapper">
+                        <select name="pais" id="pais">
+                            <option value="angola">Angola</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="timor-leste">Timor-Leste</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h2>Opção de envio</h2>
+            <div class="radio">
+                <input type="radio" name="opcao-envio" id="normal" value="normal">
+                <label for="normal">Normal</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="opcao-envio" id="expresso" value="expresso">
+                <label for="expresso">Expresso</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

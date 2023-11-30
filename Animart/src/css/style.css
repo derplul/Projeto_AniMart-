@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+@media screen and (max-width: 768px) {
+        .body, .div-1, .div-2, .p-text, .p, .h1, .navbar, .body-2, .btn-pg1, .img, .img1, .cad .main, .search-box, .search-btn, .car, .search.text, .custom-input, .loupe-blue {
+                width: 100%;
+                flex-direction: column;
+
+
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: #000;
+    background: linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
+    border: 10px ridge #7fcdec;
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar{
+    border: 4px solid black;
+    border-radius: 15px;
+    box-shadow: rgb(32, 22, 59) 0px 5px 0 0;
+    background: linear-gradient(rgba(183, 241, 241, 0.973), #dbe0e2);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    height: 58px;
+}
+
+/* AREA DE IMAGEN */
+
+.img {
+    display: flex;
+    width: 14px;
+    height: auto;
+}
+
+/* Imagen */
+
+.img1 {
+    position: absolute;
+    top: -9px;
+    left: 0px;
+    width: 80px;
+    height: auto;
+    width: 100px;
+    height: 100px;
+}
+
+/* Login e Cadastro */
+
+.cad {
+    padding: 10px 10px;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    background-color: #ffff;
+    border: 2px solid rgb(32, 22, 59);
+    border-radius: 30px;
+    box-shadow: rgb(32, 22, 59) 4px 4px 0 0;
+    color: rgb(32, 22, 59);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.log{
+    padding: 10px 10px;
+    position: absolute;
+    top: 10px;
+    right: 160px;
+    background-color: #ffff;
+    border: 2px solid rgb(32, 22, 59);
+    border-radius: 30px;
+    box-shadow: rgb(32, 22, 59) 4px 4px 0 0;
+    color: rgb(32, 22, 59);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+}
+
+.car {
+    padding: 10px 10px;
+    position: absolute;
+    top: 10px;
+    right: 260px;
+    background-color: #ffff;
+    border: 2px solid rgb(32, 22, 59);
+    border-radius: 30px;
+    box-shadow: rgb(32, 22, 59) 4px 4px 0 0;
+    color: rgb(32, 22, 59);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cad:hover {
+    background-color: #fff;
+}
+
+.cad:active {
+    box-shadow: rgb(32, 22, 59) 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+.log:hover {
+    background-color: #fff;
+}
+
+.log:active {
+    box-shadow: rgb(32, 22, 59) 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+
+
+.btn-pg1 {
+    color: black;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #000;
+    background: linear-gradient(rgba(202, 233, 233, 0.973), rgb(227, 234, 235));
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 5px solid rgb(8, 8, 8);
+    border-radius: 30px;
+}
+
+.titulo {
+    color: rgb(32, 22, 59);
+    border: none;
+    text-decoration: double;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+/*AREA DE PESQUISA*/
+
+.search-box {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    background: white;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    border: 2px solid rgb(32, 22, 59);
+    border-radius: 30px;
+    box-shadow: rgb(32, 22, 59) 4px 4px 0 0;
+    color: rgb(32, 22, 59);
+}
+
+.search.text {
+    background: none;
+    border: 0;
+    outline: 0;
+    padding: 0;
+
+    font-size: 16px;
+    width: 0;
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-input {
+    margin-right: 5px;
+    border-style: none;
+    border-block-end: #000;
+}
+
+/* AREA FOOTER */
+
+footer {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(#f3eeee, #7fcdec)
+}
+
+.sub-title {
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 24px;
+    margin: 0 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.div-foo {
+    padding: 8px;
+    
+}
+
+.p-foo {
+    padding: 3px;
+    border: 3px outset;
+    box-shadow: outset #162e1b;
+    text-align: right;
+    letter-spacing: 2px;
+    line-height: 1,5;
+    max-width: fit-content;
+    background-color: #f5f7f8;
+    border-radius: 4px;
+
+}
+
+.p-foo-0{
+    text-align: center;
+    padding: 4px;
+    background: linear-gradient(#f3dddd, #b5def1);
+    border: 2px solid rgb(32, 22, 59);
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(32, 22, 59);
+    display: inline-block;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 20px 18px;
+    line-height: 20px;
+}
+
+.p-foo2 {
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: right;
+    max-width: fit-content;
+    border: 2px solid rgb(32, 22, 59);
+    border-radius: 30px;
+    box-shadow: rgb(5, 5, 5) 4px 4px 0 0;
+    color: rgb(32, 22, 59);
+    
+}
+
+.logo-foo {
+    text-align: center;
+    text-decoration: double;
+}
+
+.img-foo {
+   height: 48px;
+   display: block;
+   margin: 0 auto;
+   width: 100px;
+   height: 100px;
+
+}
+
+.div-foo1 {
+    padding: 22px;
+}
+
+/* AREA DE CADASTRO E LOGIN */
+
+.body-2 {
+    background: linear-gradient(#f1eded, #a2d9f3);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.container-2{
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+  }
+  
+.header-2{
+    background: linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
+    padding: 24px;
+    text-align: center;
+    color: #FFF;
+  }
+  
+.form{
+    padding: 18px;
+  }
+  
+.form-content {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+  }
+  
+.form-content label {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  
+.form-content input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+  }
+  
+.form-content a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+  }
+  
+.form button {
+    background-color: #00c3ff;
+    color: #FFF;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+  }
+  
+.form-content.error input {
+    border-color: #ff3b25;
+  }
+  
+.form-content.error a {
+    color: #ff3b25;
+    visibility: visible;
+  }
